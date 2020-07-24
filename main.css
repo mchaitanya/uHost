@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
 /* product overview */
 #product-overview {
     background: url("freedom.jpg");
@@ -21,8 +26,7 @@ body {
 }
 
 /* plans */
-.section-title {
-    color: #2ddf5c;
+#plans {
     text-align: center;
 }
 
@@ -106,6 +110,35 @@ body {
 #key-features .section-title {
     color: white;
     margin: 32px;
+}
+
+.key-features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image {
+    background: #ffcede;
+    width: 128px;
+    height: 128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.key-feature__description {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* header */
