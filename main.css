@@ -96,6 +96,18 @@ body {
     outline: none;
 }
 
+/* key features */
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
 /* header */
 .main-header {
     width: 100%;
