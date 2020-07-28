@@ -43,11 +43,18 @@ body {
     vertical-align: middle;
 }
 
+/* leave the text styling for alt text */
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+.main-header__brand img {
+    height: 100%;
 }
 
 .main-nav {
