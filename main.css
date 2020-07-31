@@ -129,7 +129,7 @@
 
 .modal {
     position: fixed;
-    /* display: none; */
+    display: none;
     z-index: 200;
     top: 20%;
     left: 30%;
