@@ -198,3 +198,8 @@ body {
 .main-footer__link a:active {
     color: #ccc;
 }
+
+/* class that can be toggled to display the modal, sidenav etc */
+.open {
+    display: block !important;
+}
