@@ -5,7 +5,7 @@
 
 /* product overview */
 #product-overview {
-    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff1b68;
+    background: linear-gradient(to top, rgba(80, 68, 18, 0.6) 10%, transparent), url("images/freedom.jpg") center/cover no-repeat border-box, #ff1b68;
     /* background-image: url("images/freedom.jpg");
     background-size: cover;
     background-position: left 10% bottom 20%;
@@ -26,29 +26,42 @@
     position: absolute;
     left: 5%;
     bottom: 5%;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 40rem) {
+    #product-overview {
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+    
 }
 
 /* plans */
-.plans__list {
+/* .plans__list {
     width: 80%;
     margin: auto;
     text-align: center;
-}
+} */
 
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 0.5rem;
-    display: inline-block;
+    margin: 0.5rem 0;
+    /* display: inline-block;
     width: 30%;
-    vertical-align: middle;
+    vertical-align: middle; */
 }
 
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
