@@ -82,3 +82,17 @@ main {
 #premium .package__subtitle {
     color: #bbb;
 }
+
+@media (min-width: 40rem) {
+    main {
+        margin: 3rem auto;
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .package, 
+    #free {
+        border-width: 4px;
+    }
+}
