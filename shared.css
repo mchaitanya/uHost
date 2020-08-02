@@ -38,6 +38,11 @@ body {
     outline: none;
 }
 
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
 /* header */
 .main-header {
     width: 100%;
