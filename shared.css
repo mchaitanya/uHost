@@ -83,7 +83,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
-    height: 1.5rem;
+    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
 }
@@ -93,10 +93,7 @@ body {
 }
 
 .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 122px);
-    vertical-align: middle;
+    display: none;
 }
 
 .main-nav__items {
@@ -139,6 +136,20 @@ body {
     color: #ff1b68;
     background: white;
     border: none;
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle;
+    }
+
 }
 
 /* mobile nav */
@@ -185,8 +196,7 @@ body {
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -197,6 +207,13 @@ body {
 .main-footer__link a:hover, 
 .main-footer__link a:active {
     color: #ccc;
+}
+
+@media (min-width: 40rem) {
+    .main-footer__link {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }
 
 /* class that can be toggled to display the modal, sidenav etc */
