@@ -38,6 +38,13 @@ body {
     outline: none;
 }
 
+.button[disabled] {
+    cursor: not-allowed;
+    border: #a1a1a1;
+    background: #ccc;
+    color: #a1a1a1;
+}
+
 main {
     min-height: calc(100vh - 3.5rem - 8rem);
     margin-top: 3.5rem;
