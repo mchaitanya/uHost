@@ -23,7 +23,7 @@ function openModal() {
     if (modal) {
         // backdrop.style.display = 'block';
         // modal.style.display = 'block';
-        backdrop.classList.add('open');
+        showBackdrop();
         modal.classList.add('open');
     }
 }
@@ -33,16 +33,30 @@ function closeModal() {
         // modal.style.display = 'none';
         // backdrop.style.display = 'none';
         modal.classList.remove('open');
-        backdrop.classList.remove('open');
+        hideBackdrop();
     }
 }
 
 function openSideNav() {
-    backdrop.classList.add('open');
+    showBackdrop();
     mobileNav.classList.add('open');
 }
 
 function closeSideNav() {
     mobileNav.classList.remove('open');
+    hideBackdrop();
+}
+
+function showBackdrop() {
+    backdrop.style.display = 'block';
+    // delay the adding of the class
+    // so that the display doesn't change at the same time as the opacity
+    setTimeout(_ => backdrop.classList.add('open'), 10)
+}
+
+function hideBackdrop() {
     backdrop.classList.remove('open');
+    // wait for the transition to end before changing display back
+    // this should be the same as the duration on the transition property
+    setTimeout(_ => backdrop.style.display = 'none', 200);
 }
