@@ -42,7 +42,7 @@ main {
     padding: 0.5rem;
     color: white;
     font-size: 0.75rem;
-    transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+    transform: rotate(45deg) translate(3.5rem, -1rem);
     /* transform-origin: center; */
     width: 12rem;
     text-align: center;
