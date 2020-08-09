@@ -244,4 +244,6 @@ main {
 /* class that can be toggled to display the modal, sidenav etc */
 .open {
     display: block !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
